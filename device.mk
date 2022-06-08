@@ -68,7 +68,8 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
-    OPlusSystemUIResTarget
+    OPlusSystemUIResTarget\
+    OPlus9RTWifiOverlay
 
 # Power
 PRODUCT_COPY_FILES += \
