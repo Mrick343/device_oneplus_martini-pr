@@ -68,6 +68,7 @@ PRODUCT_PACKAGES += \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
+    OPlus9RTWifiOverlay \
     PixelSetupWizardResTarget
 
 # Power
