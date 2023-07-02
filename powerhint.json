@@ -123,6 +123,16 @@
       "ResetOnInit": true
     },
     {
+      "Name": "UclampFgMax",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.max",
+      "Values": [
+        "50",
+        "100"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
       "Name": "UclampTALatency",
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive",
       "Values": [
@@ -227,6 +237,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "SchedUtilClampMin",
+      "Path": "/proc/sys/kernel/sched_util_clamp_min",
+      "Values": [
+        "512",
+        "256"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "DisplayWakeup",
       "Path": "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup",
       "Values": [
@@ -295,6 +314,12 @@
       "Node": "UclampTALatency",
       "Duration": 0,
       "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "SchedUtilClampMin",
+      "Duration": 0,
+      "Value": "512"
     },
     {
       "PowerHint": "INTERACTION",
@@ -367,6 +392,18 @@
       "Node": "UclampTAMin",
       "Duration": 3000,
       "Value": "50"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampFgMax",
+      "Duration": 3000,
+      "Value": "100"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "SchedUtilClampMin",
+      "Duration": 3000,
+      "Value": "512"
     },
     {
       "PowerHint": "LAUNCH",
