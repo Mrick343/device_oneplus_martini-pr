@@ -14,6 +14,8 @@ $(call inherit-product, device/oneplus/martini/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_ENABLE_BLUR := true
 PRODUCT_NAME := lineage_martini
 PRODUCT_DEVICE := martini
 PRODUCT_MANUFACTURER := OnePlus
@@ -34,4 +36,8 @@ BUILD_FINGERPRINT := OnePlus/MT2111_IND/OP5155L1:13/TP1A.220905.001/R.1307645_1-
 
 # Gapps
 WITH_GAPPS := true
+
+MATRIXX_BUILD_TYPE := Official
+
+
 
