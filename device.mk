@@ -59,6 +59,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
+    OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
     OPlus9RTWifiOverlay \
     PixelSetupWizardResTarget
@@ -66,6 +67,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
